@@ -1,0 +1,42 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goingtogogo/gngtgg.space.git"
+  },
+  "author": "goingtogogo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goingtogogo/gngtgg.space/issues"
+  },
+  "homepage": "https://github.com/goingtogogo/gngtgg.space#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.1",
+    "csso-webpack-plugin": "^2.0.0-beta.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "write-file-webpack-plugin": "^4.5.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "modernizr": "^3.11.3",
+    "normalize.css": "^8.0.1",
+    "perfect-scrollbar": "^1.5.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3"
+  }
+}
