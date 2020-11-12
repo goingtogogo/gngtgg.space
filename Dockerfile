@@ -1,12 +1,12 @@
 FROM node:10-alpine
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
+WORKDIR /var/www
 
 COPY package*.json ./
 RUN npm install
-COPY --chown=node:node . .
+COPY . .
 EXPOSE 5000
 RUN npm run build
-RUN npm run start
+
+
+CMD [ "npm", "run", "start" ]
