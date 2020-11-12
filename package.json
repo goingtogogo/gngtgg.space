@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "dev-server": "webpack-dev-server --open",
+    "start": "node server/server.js",
     "build": "webpack"
   },
   "repository": {
@@ -52,6 +53,7 @@
   },
   "dependencies": {
     "core-js": "^3.7.0",
+    "node-static": "^0.7.11",
     "normalize.css": "^8.0.1"
   }
 }
