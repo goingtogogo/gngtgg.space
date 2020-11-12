@@ -41,11 +41,9 @@ module.exports = {
                                 {
                                     targets: {
                                         node: 'current',
-                                        browsers: [
-                                            'last 2 versions',
-                                            'safari >= 7',
-                                        ],
                                     },
+                                    corejs: '3.7.0',
+                                    useBuiltIns: 'entry',
                                 },
                             ],
                         ],
