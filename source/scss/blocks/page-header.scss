@@ -1,0 +1,398 @@
+@media only screen and (min-width: 1025px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 100%;
+        max-width: 380px;
+        height: 100%;
+        max-height: 80vh;
+        min-height: inherit;
+        text-align: center;
+        padding: 70px 30px 45px;
+        overflow: auto;
+    }
+
+    /* --- Navigation --- */
+    .header__menu {
+        position: absolute;
+        top: -16px;
+        right: -90px;
+        padding: 15px 0;
+        width: 70px;
+        z-index: 999;
+        background-color: #444;
+        border-radius: 35px;
+        box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+    }
+
+    .header__menu-link {
+        display: block;
+        position: relative;
+        color: #b5b6b7;
+        padding: 10px;
+        transition: all $base-duration ease-in-out;
+
+        &--active,
+        &:focus,
+        &:hover {
+            color: $c-accent;
+        }
+
+        &:hover {
+            .header__menu-text {
+                right: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .header__menu-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    .header__menu-text {
+        position: absolute;
+        width: auto;
+        visibility: hidden;
+        opacity: 0;
+        color: $c-white;
+        padding: 2px 10px;
+        background-color: $c-accent;
+        white-space: nowrap;
+        right: 0;
+        top: -50%;
+        margin-top: 50%;
+        transition: all $base-duration ease-in-out;
+        z-index: 0;
+        box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
+    }
+    /* --- End Navigation --- */
+}
+
+/* --- Arrow Nav --- */
+.header__arrows-nav {
+    position: absolute;
+    padding: 10px 0;
+    width: 60px;
+    right: -80px;
+    background-color: #444;
+    border-radius: 35px;
+    z-index: 98;
+    list-style: none;
+    bottom: 0;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+}
+
+.header__arrow-right,
+.header__arrow-left {
+    position: relative;
+    left: 8px;
+    text-align: center;
+    color: #b5b6b7;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    background-color: #444;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all $base-duration ease-in-out;
+
+    &:hover {
+        border: none;
+        color: $c-accent;
+    }
+}
+/* --- End Arrow Nav --- */
+
+.header__photo {
+    position: relative;
+    width: 180px;
+    margin: 0 auto 30px;
+    z-index: 1;
+
+    img {
+        display: block;
+        max-width: 100%;
+        background-color: $c-white;
+        border: 3px solid $c-white;
+        border-radius: 300px;
+    }
+
+    &:after {
+        position: absolute;
+        opacity: 0.3;
+        top: 7%;
+        left: 7%;
+        border-radius: 300px;
+        content: '';
+        height: calc(100% + 0px);
+        width: calc(100% + 0px);
+        background-image: -webkit-repeating-radial-gradient(
+            center center,
+            #fff,
+            #fff 1px,
+            transparent 0px,
+            transparent 100%
+        );
+        background-size: 6px 6px;
+        z-index: -1;
+    }
+}
+
+.header__titles {
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #f5f5f5;
+        margin: 5px 0 7px;
+        line-height: 1.2em;
+    }
+}
+
+.header__titles {
+    h4 {
+        font-size: 18px;
+        font-weight: 300;
+        color: #bbb;
+        margin: 5px 0;
+        line-height: 1.2em;
+    }
+}
+
+/* --- Social Links --- */
+.header__social-links {
+    margin: 16px 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+.header__social-link {
+    display: block;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.9;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+
+    &:hover {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &--codepen {
+        background-image: url('../../img/icons/codepen.svg');
+    }
+
+    &--github {
+        background-image: url('../../img/icons/github.svg');
+    }
+}
+
+/* --- End Social Links --- */
+
+.header__buttons {
+    margin-top: 30px;
+}
+
+.header__button {
+    background-color: transparent;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.header__button:hover {
+    background-color: $c-white;
+    color: $c-accent;
+    border-color: $c-white;
+}
+
+.header__copyrights {
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #bbb;
+    padding: 5px 10px 15px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        position: absolute;
+        width: 100%;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #444;
+        z-index: 99;
+        padding: 30px 30px 10px 30px;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        overflow: auto;
+        transition: all $base-duration ease-in-out;
+    }
+
+    .header__copyrights {
+        right: 0;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .header__titles {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 17px;
+        }
+    }
+
+    .header__photo {
+        max-width: 130px;
+        margin-bottom: 25px;
+    }
+
+    .mobile-menu-hide {
+        width: 0;
+        right: 0;
+        margin-right: -100%;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: none;
+    }
+
+    .header__menu {
+        margin: 20px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .header__menu-link {
+        display: block;
+        color: #fff;
+        padding: 12px 0;
+        line-height: 21px;
+        opacity: 0.7;
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    .header__menu-icon {
+        display: none;
+    }
+
+    .header__menu-text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        display: block;
+        width: 48px;
+        height: 48px;
+        line-height: 46px;
+        text-align: center;
+        background-color: $c-accent;
+        right: 10px;
+        font-size: 19px;
+        top: 10px;
+        border-radius: 30px;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        z-index: 900;
+
+        span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 50%;
+            background: #fff;
+            border-radius: 5px;
+            opacity: 1;
+            left: 25%;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 16px;
+                transform-origin: left center;
+            }
+
+            &:nth-child(2) {
+                top: 22px;
+                transform-origin: left center;
+            }
+
+            &:nth-child(3) {
+                top: 28px;
+                transform-origin: left center;
+            }
+        }
+
+        &--opened {
+            span {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: 13px;
+                    left: 15px;
+                }
+
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 30px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+
+    .header__arrows-nav {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 48px;
+        right: 10px;
+        bottom: 10px;
+        padding: 5px 0;
+        border: 2px solid $c-accent;
+
+        button {
+            font-size: 24px;
+        }
+    }
+
+    .header__arrow-right,
+    .header__arrow-left {
+        left: 0;
+        background: transparent;
+    }
+}

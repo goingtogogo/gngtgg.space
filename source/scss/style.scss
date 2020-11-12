@@ -1,0 +1,16 @@
+@import 'general/variables.scss';
+@import 'general/fonts.scss';
+
+@import '~normalize.css/normalize.css';
+
+@import 'general/fonts.scss';
+@import 'general/scaffolding.scss';
+
+@import 'blocks/page-header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/home.scss';
+@import 'blocks/about.scss';
+@import 'blocks/resume.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/blog.scss';
+@import 'blocks/contact.scss';

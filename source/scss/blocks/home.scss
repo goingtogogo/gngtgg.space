@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__features {
+    height: 24px;
+    overflow: hidden;
+}
+
+.home__features__inner {
+    position: relative;
+    animation: rotate 8s ease-in-out infinite;
+}
+
+.home__feature-content {
+    color: #aaa;
+    font-size: 21px;
+    font-weight: 300;
+    margin: 5px 0;
+    text-align: center;
+}
+
+@keyframes rotate {
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+    25%,
+    45% {
+        transform: translateY(-32px);
+    }
+    50%,
+    70% {
+        transform: translateY(-64px);
+    }
+    75%,
+    95% {
+        transform: translateY(-32px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

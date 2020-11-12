@@ -1,0 +1,216 @@
+/* --- Timeline (Education & Experience) --- */
+.resume__content {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+
+    &-left {
+        grid-column: span 7;
+    }
+
+    &-right {
+        grid-column: span 5;
+    }
+}
+
+.resume__timeline {
+    &-item {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-bottom: 15px;
+
+        &:last-child {
+            padding-bottom: 0;
+
+            .resume__timeline-right-part {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &-left-part {
+        flex: 0 0 30%;
+        padding-right: 25px;
+        min-height: 100%;
+        text-align: right;
+    }
+
+    &-right-part {
+        flex: 0 0 70%;
+        padding-left: 25px;
+        padding-right: 15px;
+        p,
+        p > * {
+            font-size: 0.92em;
+        }
+    }
+
+    &-divider {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        bottom: 0;
+        width: 1px;
+        background-color: #444;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            margin-top: 4px;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            margin-left: -8px;
+            border-radius: 10px;
+            background-color: $c-accent;
+            opacity: 0.25;
+            z-index: 0;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            margin-top: 8px;
+            width: 9px;
+            height: 9px;
+            margin-left: -4px;
+            background-color: #222;
+            border-radius: 5px;
+            border: 2px solid $c-accent;
+            z-index: 1;
+        }
+    }
+
+    &-title {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+
+    &-period {
+        color: #aaa;
+        margin: 3px 0;
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    &-company {
+        display: block;
+        margin: 0 0 4px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.45em;
+        color: #a5a6a7;
+    }
+}
+/* --- End Timeline (Education & Experience) --- */
+
+/* --- Knowledges --- */
+.resume__knowledges {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        background-color: $c-accent;
+        border-radius: 3px;
+        color: #fff;
+        padding: 1px 10px;
+        margin: 3px 2px;
+        font-size: 13px;
+    }
+}
+/* --- End of Knowledges --- */
+
+/* --- Certificates --- */
+.resume__certificates {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.resume__certificate-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border: 2px solid #444;
+    border-radius: 8px;
+    transition: all $base-duration ease-in-out;
+}
+
+.resume__certificate-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 120px;
+    align-self: stretch;
+    background-color: #444;
+    padding: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.resume__certificate-content {
+    width: 100%;
+    line-height: 14px;
+    padding: 20px 25px;
+}
+
+.resume__certificate-title {
+    h4 {
+        font-size: 14px;
+    }
+}
+
+.resume__certificate-id {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.resume__certificate-date {
+    margin-top: 6px;
+    font-size: 0.7em;
+    color: #777;
+    opacity: 0.7;
+}
+/* --- End of Certificates --- */
+
+@media only screen and (max-width: 1200px) {
+    .resume__content-left {
+        grid-column: span 12;
+    }
+
+    .resume__content-right {
+        grid-column: span 12;
+    }
+
+    .resume__certificate-item {
+        grid-column: span 2;
+    }
+
+    .resume__certificate-id {
+        font-size: 0.7em;
+    }
+
+    .resume__timeline-item {
+        flex-direction: column;
+    }
+
+    .resume__timeline-divider {
+        left: 0;
+    }
+
+    .resume__timeline-left-part {
+        padding-left: 25px;
+        text-align: left;
+    }
+}

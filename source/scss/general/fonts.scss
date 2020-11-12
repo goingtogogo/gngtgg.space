@@ -1,0 +1,75 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i");
+
+@font-face {
+  font-family: "Linearicons-Free";
+  src: url("../fonts/Linearicons-Free.woff2") format("woff2"),
+    url("../fonts/Linearicons-Free.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lnr {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lnr-home:before {
+  content: "\e800";
+}
+.lnr-pencil:before {
+  content: "\e802";
+}
+.lnr-heart:before {
+  content: "\e813";
+}
+.lnr-star:before {
+  content: "\e814";
+}
+.lnr-flag:before {
+  content: "\e817";
+}
+.lnr-envelope:before {
+  content: "\e818";
+}
+.lnr-graduation-hat:before {
+  content: "\e821";
+}
+.lnr-book:before {
+  content: "\e828";
+}
+.lnr-user:before {
+  content: "\e82a";
+}
+.lnr-store:before {
+  content: "\e82d";
+}
+.lnr-map-marker:before {
+  content: "\e833";
+}
+.lnr-laptop-phone:before {
+  content: "\e83d";
+}
+.lnr-briefcase:before {
+  content: "\e84c";
+}
+.lnr-clock:before {
+  content: "\e864";
+}
+.lnr-chevron-left:before {
+  content: "\e875";
+}
+.lnr-chevron-right:before {
+  content: "\e876";
+}
+.lnr-checkmark-circle:before {
+  content: "\e87f";
+}
