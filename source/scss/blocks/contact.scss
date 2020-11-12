@@ -1,0 +1,280 @@
+/* Form controls */
+.contact__content {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+
+    &-left {
+        grid-column: span 4;
+    }
+
+    &-right {
+        grid-column: span 8;
+    }
+}
+
+.form-group {
+    position: relative;
+    margin: 0 0 20px;
+}
+.form-control,
+.form-control:focus {
+    height: 42px;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus {
+    position: relative;
+    border: 2px solid #999;
+    border-radius: 5px;
+    display: block;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px 25px 10px 12px;
+    width: 100%;
+    background: 0 0;
+    background-color: transparent;
+    text-align: left;
+    color: inherit;
+    box-shadow: none;
+    outline: none;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.1);
+}
+
+textarea.form-control,
+textarea.form-control:focus {
+    height: auto;
+}
+
+.form-control ~ .form-control-border {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 100%;
+    border-radius: 5px;
+    opacity: 0;
+    background: transparent;
+    border: 2px solid $c-accent;
+    border-right-width: 0;
+    height: 100%;
+    transition: all $base-duration ease-in-out;
+}
+
+.form-control:focus ~ .form-control-border {
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    border-right-width: 2px;
+}
+
+.has-error .form-control ~ .form-control-border {
+    border-color: #ff4c4c;
+}
+
+/* Placeholders */
+.form-control::-moz-placeholder {
+    color: #adadac;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #adadac;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #adadac;
+}
+/* /Placeholders */
+
+.form-group .help-block {
+    position: absolute;
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 0.93em;
+    line-height: 1.75em;
+    margin: -2px 0 0 10px;
+    color: #fff;
+    background: #ff4e4e;
+}
+
+.form-group .help-block:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #ff4e4e;
+    border-right: 10px solid transparent;
+}
+.form-group .help-block:empty {
+    display: none;
+}
+
+.form-group-with-icon i {
+    position: absolute;
+    font-size: 16px;
+    top: 13px;
+    right: 13px;
+    color: #d3d3d3;
+}
+
+.form-group-with-icon.form-group-focus i {
+    color: $c-accent;
+}
+
+.form-group.form-group-w-checkbox {
+    padding-top: 0;
+    padding-bottom: 8px;
+    margin-bottom: 17px;
+}
+
+.form-group-with-icon.form-group-w-checkbox {
+    padding-top: 8px;
+    padding-left: 52px;
+    margin-bottom: 25px;
+}
+
+.form-group .form-control-checkbox + label,
+.form-group.form-group-focus .form-control-checkbox + label {
+    position: relative;
+    display: inline;
+    left: 0;
+    top: 0;
+    font-size: 1em;
+    opacity: 1;
+}
+
+.form-group .form-control-checkbox,
+.form-group.form-group-focus .form-control-checkbox {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    top: 2px;
+}
+
+.form-group.form-group-w-checkbox .help-block {
+    top: 100%;
+    left: 0;
+    margin-left: 0;
+}
+
+.form-group.form-group-with-icon.form-group-w-checkbox .help-block {
+    left: 52px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: -1;
+    color: #a5a6a7;
+    transition: 0.3s;
+}
+
+.form-group .form-control:focus ~ label,
+.form-group.form-group-focus .form-control ~ label {
+    color: $c-accent;
+    top: -20px;
+    left: 0;
+    z-index: 1;
+    font-size: 13px;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus,
+.header-search input.form-control {
+    transform: translateZ(0);
+}
+/* /Form controls */
+
+/* ------------------------------------------------------------
+6. Elements
+------------------------------------------------------------ */
+.block-title {
+    display: inline-block;
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* --- Info Block with Borders --- */
+.contact__info {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 0 15px 0;
+    background-color: #333;
+    padding: 20px 10px;
+    border: 1px solid #444;
+    box-shadow: none;
+    overflow: hidden;
+    transition: all $base-duration ease-in-out;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    i {
+        position: relative;
+        font-size: 33px;
+        color: $c-accent;
+        z-index: 1;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+}
+
+.contact__info-value {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+    color: $c-accent;
+}
+/* --- End of Info Block with Borders --- */
+
+.controls.two-columns .left-column {
+    width: 47%;
+    float: left;
+    margin-right: 3%;
+}
+
+.controls.two-columns .right-column {
+    width: 50%;
+    float: right;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact__content-left {
+        grid-column: span 12;
+    }
+
+    .contact__content-right {
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .controls.two-columns .right-column,
+    .controls.two-columns .left-column {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+}

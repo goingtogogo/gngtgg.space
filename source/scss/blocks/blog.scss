@@ -1,0 +1,15 @@
+.blog__img {
+    width: 100%;
+    height: auto;
+}
+
+.blog__soon {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .blog__img {
+        object-fit: none;
+        height: 300px;
+    }
+}
