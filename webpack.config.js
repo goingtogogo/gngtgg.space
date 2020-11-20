@@ -31,7 +31,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules)/,
+                include: [/source/],
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -40,13 +40,14 @@ module.exports = {
                                 '@babel/preset-env',
                                 {
                                     targets: {
-                                        node: 'current',
+                                        browsers: ['> 1%', 'last 2 versions'],
                                     },
                                     corejs: '3.7.0',
                                     useBuiltIns: 'entry',
                                 },
                             ],
                         ],
+                        plugins: ['@babel/plugin-transform-async-to-generator'],
                     },
                 },
             },
@@ -73,21 +74,6 @@ module.exports = {
                             postcssOptions: {
                                 plugins: [['autoprefixer']],
                             },
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: false,
-                            url: false,
                         },
                     },
                 ],

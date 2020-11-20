@@ -7,16 +7,16 @@ html {
 }
 
 body {
-    margin: 0;
     width: 100%;
     height: 100%;
     min-height: 100%;
+    margin: 0;
     font-size: 15px;
     font-family: 'Poppins', Helvetica, sans-serif;
     line-height: 1.65em;
     overflow: hidden;
     color: #d5d5d5;
-    background-color: #222;
+    background-color: $c-on-background;
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    color: #eee;
+    color: $c-white;
     font-family: 'Poppins', Helvetica, sans-serif;
     font-weight: 600;
 }
@@ -93,26 +93,24 @@ figure {
     min-height: 80vh;
     margin: 10vh auto;
     padding: 0;
-    background-color: #444;
+    background-color: $c-on-background;
     box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
     backface-visibility: hidden;
 }
 
 /* buttons */
-.btn-primary,
-.btn-secondary {
+.btn-primary {
     display: inline-block;
     position: relative;
     padding: 0.8em 2.1em;
     margin-bottom: 0.75em;
-    margin-right: 0.25em;
     font-size: 1em;
     line-height: 1.2;
     border: 0;
     outline: 0;
     border: 2px solid $c-accent;
-    color: #f5f5f5;
+    color: $c-white;
     text-shadow: none;
     background-color: transparent;
     border-radius: 30px;
@@ -121,30 +119,11 @@ figure {
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
 }
 
-.btn-primary:last-child,
-.btn-secondary:last-child {
-    margin-right: 0;
-}
-
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: $c-accent;
     color: $c-white;
     border: 2px solid $c-accent;
-}
-
-.btn-secondary {
-    border-color: #d5d5d5;
-    background-color: transparent;
-    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
-    color: #f5f5f5;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: #333;
-    border-color: #d5d5d5;
-    background-color: #d5d5d5;
 }
 
 .animated {
@@ -166,11 +145,15 @@ figure {
     height: 100%;
     perspective: 1500px;
     backface-visibility: hidden;
+    border: 4px solid $c-white;
+    border-left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .animated-section {
     position: absolute;
-    background-color: #222;
+    background-color: $c-on-background;
     height: 100%;
     width: 100%;
     border-radius: 30px;
@@ -184,20 +167,19 @@ figure {
     background-position: center;
     background-position: 50% 50%;
     background-size: cover;
-}
 
-.animated-section--active {
-    opacity: 1;
-    overflow: auto;
-    visibility: visible;
-    z-index: 99;
+    &--active {
+        opacity: 1;
+        overflow: auto;
+        visibility: visible;
+        z-index: 99;
+    }
 }
 
 .page-title {
     display: inline-block;
     position: relative;
     padding-right: 25px;
-    padding-bottom: 15px;
     margin-bottom: 30px;
 }
 
@@ -236,7 +218,7 @@ figure {
 }
 
 .title-block h2 {
-    color: #f5f5f5;
+    color: $c-white;
     font-size: 60px;
     line-height: 74px;
     margin: 0;
@@ -244,38 +226,24 @@ figure {
 }
 
 /* --- White Spaces --- */
-.white-space-10 {
-    padding-bottom: 10px;
-}
-
-.white-space-20 {
-    padding-bottom: 20px;
-}
-
 .white-space-30 {
     padding-bottom: 30px;
-}
-
-.white-space-40 {
-    padding-bottom: 40px;
 }
 
 .white-space-50 {
     padding-bottom: 50px;
 }
 
-.white-space-60 {
-    padding-bottom: 60px;
-}
-
-.white-space-70 {
-    padding-bottom: 70px;
-}
 /* --- End White Spaces --- */
 
 .block-title {
+    display: inline-block;
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
     h3 {
-        position: relative;
         font-size: 21px;
         z-index: 1;
 
@@ -332,7 +300,11 @@ figure {
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $tablet) {
+    .animated-sections {
+        border: none;
+    }
+
     .animated-bg {
         display: none;
     }
