@@ -29,12 +29,15 @@ const setError = () => {
 };
 
 const sendMessage = () => {
-    const body = {};
+    const elementsArray = [...form.elements];
+    const body = elementsArray.reduce((acc, element) => {
+        console.log({element});
+        if (element && element.name) {
+            acc[element.name] = element.value;
+        }
 
-    /* eslint-disable-next-line */
-    for (let input of form.elements) {
-        body[input.name] = input.value;
-    }
+        return acc;
+    }, {});
 
     fetch('https://app.99inbound.com/api/e/CcNZ6kgC', {
         method: 'POST',

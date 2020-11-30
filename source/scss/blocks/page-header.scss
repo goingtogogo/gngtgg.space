@@ -59,15 +59,15 @@
     .header__menu-text {
         position: absolute;
         width: auto;
-        visibility: hidden;
-        opacity: 0;
-        color: $c-white;
         padding: 2px 10px;
         background-color: $c-accent;
         white-space: nowrap;
         right: 0;
         top: -50%;
         margin-top: 50%;
+        visibility: hidden;
+        opacity: 0;
+        color: $c-white;
         transition: all $base-duration ease-in-out;
         z-index: 0;
         box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);

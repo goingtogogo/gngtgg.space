@@ -31,7 +31,7 @@
 
 .about__info-title {
     color: $c-accent;
-    margin-right: 5px;
+    margin-right: 8px;
     font-weight: 600;
 }
 /* --- End Simple Info List --- */
@@ -47,10 +47,7 @@
     grid-column: span 6;
     .about__info-text {
         h4 {
-            margin: 5px 0;
-        }
-        p {
-            font-size: 0.95em;
+            margin: 8px 0;
         }
     }
 }
