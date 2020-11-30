@@ -25,17 +25,6 @@ jobs:
               run: |
                   npm install
                   npm run build
-              env:
-                  CI: true
-
-    deploy:
-        needs: [build]
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@main
-          
-            - name: ls
-              run: ls
 
             # Copying files and artifacts via SSH
             - name: Copying files to server
