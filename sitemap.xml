@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://gngtgg.space/</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#home</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#about-me</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#resume</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#portfolio</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#blog</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#contact</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+		<url>
+			<loc>https://gngtgg.space/#</loc>
+			<changefreq>always</changefreq>
+		</url>
+
+	</urlset>
+

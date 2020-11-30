@@ -70,16 +70,16 @@
             }
 
             .under-construction .stroke-background {
-                stroke: #fca072;
+                stroke: #8685ef;
             }
 
             .under-construction .stroke {
-                stroke: #fca072;
+                stroke: #8685ef;
             }
 
             .under-construction .stroke-alt {
-                stroke: #fca072;
-                fill: #fca072;
+                stroke: #8685ef;
+                fill: #8685ef;
             }
 
             .under-construction .stroke-width {

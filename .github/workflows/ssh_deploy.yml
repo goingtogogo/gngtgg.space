@@ -12,8 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE,
-      # so your workflow can access it
       - uses: actions/checkout@main
 
       # Copying files and artifacts via SSH
@@ -27,3 +25,4 @@ jobs:
           rm: true
           source: "."
           target: "${{ secrets.REMOTE_DIR }}"
+

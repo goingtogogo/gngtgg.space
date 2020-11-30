@@ -31,7 +31,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules)/,
+                include: [/source/],
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -40,13 +40,14 @@ module.exports = {
                                 '@babel/preset-env',
                                 {
                                     targets: {
-                                        node: 'current',
+                                        browsers: ['> 1%', 'last 2 versions'],
                                     },
                                     corejs: '3.7.0',
                                     useBuiltIns: 'entry',
                                 },
                             ],
                         ],
+                        plugins: ['@babel/plugin-transform-async-to-generator'],
                     },
                 },
             },
@@ -78,21 +79,6 @@ module.exports = {
                 ],
             },
             {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: false,
-                            url: false,
-                        },
-                    },
-                ],
-            },
-            {
                 test: /\.html$/,
                 use: [
                     {
@@ -116,25 +102,27 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new CssoWebpackPlugin(),
-        new CopyPlugin([
-            {
-                from: 'source/fonts/**/*.{woff,woff2}',
-                to: path.join(__dirname, 'build', 'fonts'),
-                flatten: true,
-            },
-            {
-                from: 'source/img/**',
-                to: path.join(__dirname, 'build'),
-                transformPath(targetPath) {
-                    return targetPath.replace(`source${path.sep}`, '');
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'source/fonts/**/*.{woff,woff2}',
+                    to: path.join(__dirname, 'build', 'fonts'),
+                    flatten: true,
                 },
-            },
-            {
-                from: 'source/*.ico',
-                to: path.join(__dirname, 'build'),
-                flatten: true,
-            },
-        ]),
+                {
+                    from: 'source/img/**',
+                    to: path.join(__dirname, 'build'),
+                    transformPath(targetPath) {
+                        return targetPath.replace(`source${path.sep}`, '');
+                    },
+                },
+                {
+                    from: 'source/*.ico',
+                    to: path.join(__dirname, 'build'),
+                    flatten: true,
+                },
+            ],
+        }),
     ],
     optimization: {
         minimize: true,

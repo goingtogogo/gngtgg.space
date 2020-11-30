@@ -1,5 +1,6 @@
--   cross-browser
--   add docker, static generator
--   custom scrollbar
+-   add static generator for blog
 -   display change animation
--   contact form
+-   ci
+-   portfolio
+-   dark/light mode
+-   https://web.dev/uses-long-cache-ttl/?utm_source=lighthouse&utm_medium=unknown
