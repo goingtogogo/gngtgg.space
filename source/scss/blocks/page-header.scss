@@ -158,21 +158,17 @@
 .header__titles {
     h2 {
         font-size: 36px;
-        font-weight: 600;
         color: $c-white;
         margin: 5px 0 7px;
         line-height: 1.2em;
     }
-}
-
-.header__titles {
-    h4 {
-        font-size: 18px;
-        font-weight: 300;
-        color: #bbb;
-        margin: 5px 0;
-        line-height: 1.2em;
-    }
+    h3 {
+         font-size: 18px;
+         font-weight: 300;
+         color: #bbb;
+         margin: 5px 0;
+         line-height: 1.2em;
+     }
 }
 
 /* --- Social Links --- */
@@ -276,14 +272,19 @@
             margin-bottom: 10px;
         }
 
-        h4 {
-            font-size: 17px;
+        h3 {
+            font-size: 16px;
         }
     }
 
     .header__photo {
         max-width: 130px;
         margin-bottom: 25px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .mobile-menu-hide {
