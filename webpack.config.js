@@ -102,25 +102,27 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new CssoWebpackPlugin(),
-        new CopyPlugin([
-            {
-                from: 'source/fonts/**/*.{woff,woff2}',
-                to: path.join(__dirname, 'build', 'fonts'),
-                flatten: true,
-            },
-            {
-                from: 'source/img/**',
-                to: path.join(__dirname, 'build'),
-                transformPath(targetPath) {
-                    return targetPath.replace(`source${path.sep}`, '');
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'source/fonts/**/*.{woff,woff2}',
+                    to: path.join(__dirname, 'build', 'fonts'),
+                    flatten: true,
                 },
-            },
-            {
-                from: 'source/*.ico',
-                to: path.join(__dirname, 'build'),
-                flatten: true,
-            },
-        ]),
+                {
+                    from: 'source/img/**',
+                    to: path.join(__dirname, 'build'),
+                    transformPath(targetPath) {
+                        return targetPath.replace(`source${path.sep}`, '');
+                    },
+                },
+                {
+                    from: 'source/*.ico',
+                    to: path.join(__dirname, 'build'),
+                    flatten: true,
+                },
+            ],
+        }),
     ],
     optimization: {
         minimize: true,

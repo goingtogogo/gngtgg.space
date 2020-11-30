@@ -3,3 +3,4 @@
 -   ci
 -   portfolio
 -   dark/light mode
+-   https://web.dev/uses-long-cache-ttl/?utm_source=lighthouse&utm_medium=unknown
