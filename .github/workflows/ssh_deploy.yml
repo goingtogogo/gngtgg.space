@@ -33,7 +33,6 @@ jobs:
                   host: ${{ secrets.REMOTE_HOST }}
                   username: ${{ secrets.REMOTE_USER }}
                   key: ${{ secrets.SSH_KEY }}
-                  passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
                   rm: true
                   source: 'build'
                   target: '${{ secrets.REMOTE_DIR }}'
