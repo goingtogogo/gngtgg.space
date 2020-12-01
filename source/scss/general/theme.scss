@@ -7,6 +7,10 @@
         &.light-theme.content-loaded {
             background-color: $c-accent;
 
+            img {
+                filter: none;
+            }
+
             .header, .animated-sections {
                 border-color: $c-white;
             }
@@ -72,11 +76,19 @@
             height: 2px;
         }
     }
+
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
 }
 
 body {
     &.dark-theme.content-loaded {
         background-color: $c-secondary;
+
+        img {
+            filter: brightness(.8) contrast(1.2);
+        }
 
         .header,
         .animated-sections {
