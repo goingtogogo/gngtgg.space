@@ -25,7 +25,7 @@ body {
     transition: all $base-duration ease-in-out;
 
     &.content-loaded {
-        background-color: $c-accent;
+        background-color: $c-secondary;
     }
 }
 
@@ -67,11 +67,6 @@ p {
     margin-bottom: 10px;
 }
 
-figure {
-    margin: 0;
-    padding: 0;
-}
-
 .page {
     height: 100%;
     width: 100%;
@@ -88,7 +83,7 @@ figure {
     margin: 10vh auto;
     padding: 0;
     background-color: $c-on-background;
-    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 10px;
     border-radius: 32px;
     backface-visibility: hidden;
 }
@@ -150,7 +145,8 @@ figure {
     background-color: $c-on-background;
     height: 100%;
     width: 100%;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     padding: 60px;
     opacity: 0;
     overflow: auto;
