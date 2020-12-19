@@ -30,8 +30,8 @@
 }
 
 .about__info-title {
-    color: $c-accent;
     margin-right: 8px;
+    color: $c-accent;
     font-weight: 600;
 }
 /* --- End Simple Info List --- */
@@ -41,15 +41,18 @@
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(12, 1fr);
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 .about__info-block-w-icon {
     grid-column: span 6;
-    .about__info-text {
+    padding: 0;
         h4 {
             margin: 8px 0;
         }
-    }
 }
 /* --- End Info block with Icon --- */
 
