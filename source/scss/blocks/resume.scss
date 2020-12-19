@@ -5,15 +5,18 @@
     grid-template-columns: repeat(12, 1fr);
 
     &-left {
-        grid-column: span 7;
+        grid-column: span 12;
     }
 
     &-right {
-        grid-column: span 5;
+        grid-column: span 12;
     }
 }
 
 .resume__timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     &-item {
         position: relative;
         display: flex;
@@ -40,9 +43,12 @@
     &-right-part {
         flex: 0 0 70%;
         padding-left: 25px;
-        p,
-        p > * {
+        p {
             font-size: 0.92em;
+        }
+
+        strong {
+            font-size: 1.1em;
         }
     }
 
@@ -90,7 +96,7 @@
     }
 
     &-period {
-        color: #aaa;
+        color: $c-accent;
         margin: 3px 0;
         font-size: 14px;
         line-height: 1.4em;
@@ -130,6 +136,9 @@
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .resume__certificate-item {
@@ -164,18 +173,18 @@
 }
 
 .resume__certificate-title {
-    h4 {
-        font-size: 14px;
-    }
+    font-size: 14px;
 }
 
 .resume__certificate-id {
+    display: block;
     margin-top: 8px;
     font-size: 0.9em;
     color: #777;
 }
 
 .resume__certificate-date {
+    display: block;
     margin-top: 6px;
     font-size: 0.7em;
     color: #777;

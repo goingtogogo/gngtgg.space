@@ -212,10 +212,6 @@
 
 /* --- End Social Links --- */
 
-.header__buttons {
-    margin-top: 30px;
-}
-
 .header__button {
     background-color: transparent;
     color: $c-white;
@@ -226,18 +222,6 @@
     background-color: $c-white;
     color: $c-accent;
     border-color: $c-white;
-}
-
-.header__copyrights {
-    width: 380px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #bbb;
-    padding: 5px 10px 20px;
-    line-height: 14px;
-    font-size: 12px;
-    text-align: center;
 }
 
 .header__slider-button {
@@ -265,6 +249,7 @@
 
     .header__slider-wrapper {
         position: relative;
+        cursor: pointer;
         width: 100%;
         height: 100%;
         top: 0;
@@ -294,13 +279,6 @@
         visibility: visible;
         overflow: auto;
         transition: all $base-duration ease-in-out;
-    }
-
-    .header__copyrights {
-        right: 0;
-        width: 100%;
-        position: relative;
-        margin-top: 30px;
     }
 
     .header__titles {

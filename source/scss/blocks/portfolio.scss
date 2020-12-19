@@ -1,0 +1,10 @@
+.portfolio__content {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: $tablet) {
+    .blog__img {
+        width: 100%;
+        height: auto;
+    }
+}
