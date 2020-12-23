@@ -19,3 +19,6 @@ cd gngtgg.space
 npm install
 npm run dev
 ```
+
+### Lighthouse score
+![Lighthouse report](readme/lighthouse.png)
