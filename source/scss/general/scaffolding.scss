@@ -233,15 +233,16 @@ p {
 .title-block {
     position: relative;
     text-align: center;
+
+    h2 {
+        color: $c-white;
+        font-size: 60px;
+        line-height: 74px;
+        margin: 0;
+        text-align: center;
+    }
 }
 
-.title-block h2 {
-    color: $c-white;
-    font-size: 60px;
-    line-height: 74px;
-    margin: 0;
-    text-align: center;
-}
 
 /* --- White Spaces --- */
 .white-space-30 {
@@ -296,6 +297,7 @@ p {
     right: 0;
     bottom: 0;
     background-position: center center;
+    background-image: url('../../img/main_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
