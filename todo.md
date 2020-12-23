@@ -1,5 +1,8 @@
 -   add static generator for blog
 -   display change animation
--   ci
+-   ~~ci~~
 -   portfolio
--   dark/light mode
+-   ~~dark/light mode~~
+-   cv
+
+добавить cv
