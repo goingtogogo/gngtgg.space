@@ -4,5 +4,3 @@
 -   portfolio
 -   ~~dark/light mode~~
 -   cv
-
-добавить cv
