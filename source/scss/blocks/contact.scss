@@ -50,7 +50,9 @@
 }
 
 textarea.contact__input {
-    height: auto;
+    resize: vertical;
+    min-height: 168px;
+    max-height: 300px;
 }
 
 .contact__input ~ .contact__input-border {
