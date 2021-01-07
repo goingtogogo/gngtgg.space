@@ -8,6 +8,7 @@
         grid-column: span 7;
 
         p {
+            font-size: 20px;
             margin: 0;
         }
     }
@@ -31,7 +32,7 @@
 
 .about__info-title {
     margin-right: 8px;
-    color: $c-accent;
+    color: darken($c-accent, 30%);
     font-weight: 600;
 }
 /* --- End Simple Info List --- */

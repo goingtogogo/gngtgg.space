@@ -57,8 +57,8 @@
         top: 0;
         left: 30%;
         bottom: 0;
-        width: 1px;
-        background-color: $c-on-surface;
+        width: 3px;
+        background-color: $c-black;
 
         &::before {
             content: '';
@@ -83,7 +83,7 @@
             width: 9px;
             height: 9px;
             margin-left: -4px;
-            background-color: $c-on-background;
+            background-color: $c-black;
             border-radius: 5px;
             border: 2px solid $c-accent;
             z-index: 1;
@@ -96,7 +96,7 @@
     }
 
     &-period {
-        color: $c-accent;
+        color: darken($c-accent, 30%);
         margin: 3px 0;
         font-size: 14px;
         line-height: 1.4em;
@@ -108,7 +108,7 @@
         font-size: 13px;
         font-weight: 300;
         line-height: 1.45em;
-        color: #a5a6a7;
+        color: lighten($c-black, 30%);
     }
 }
 /* --- End Timeline (Education & Experience) --- */
@@ -122,11 +122,10 @@
     li {
         display: inline-block;
         background-color: $c-accent;
-        border-radius: 3px;
-        color: $c-white;
-        padding: 1px 10px;
+        color: $c-black;
+        padding: 8px 12px;
         margin: 3px 2px;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 /* --- End of Knowledges --- */
@@ -138,6 +137,7 @@
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -145,8 +145,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    border: 2px solid $c-on-surface;
-    border-radius: 8px;
+    border: 3px solid $c-black;
     transition: all $base-duration ease-in-out;
 }
 
@@ -155,10 +154,9 @@
     align-items: center;
     flex: 0 0 120px;
     align-self: stretch;
-    background-color: $c-on-surface;
+    background-color: $c-secondary;
+    border-right: 3px solid $c-black;
     padding: 25px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
 
     img {
         display: block;
@@ -180,15 +178,14 @@
     display: block;
     margin-top: 8px;
     font-size: 0.9em;
-    color: #777;
+    color: lighten($c-black, 30%);
 }
 
 .resume__certificate-date {
     display: block;
     margin-top: 6px;
     font-size: 0.7em;
-    color: #777;
-    opacity: 0.7;
+    color: lighten($c-black, 40%);
 }
 /* --- End of Certificates --- */
 

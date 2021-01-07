@@ -37,40 +37,41 @@
                         <h3>Frontend engineer</h3>
                     </div>
                 </div>
-
-                <ul class="header__menu">
-                    <li>
-                        <a href="#home" data-href="home" aria-label="Home"
-                            class="header__menu-link header__menu-link--active">
-                            <span class="header__menu-icon lnr lnr-home"></span>
-                            <span class="header__menu-text">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about-me" aria-label="About Me" data-href="about-me" class="header__menu-link">
-                            <span class="header__menu-icon lnr lnr-user"></span>
-                            <span class="header__menu-text">About Me</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#resume" data-href="resume" aria-label="Resume" class="header__menu-link">
-                            <span class="header__menu-icon lnr lnr-graduation-hat"></span>
-                            <span class="header__menu-text">Resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" aria-label="Portfolio" data-href="portfolio" class="header__menu-link">
-                            <span class="header__menu-icon lnr lnr-briefcase"></span>
-                            <span class="header__menu-text">Portfolio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" aria-label="Contact" data-href="contact" class="header__menu-link">
-                            <span class="header__menu-icon lnr lnr-envelope"></span>
-                            <span class="header__menu-text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="header__menu">
+                        <li>
+                            <a href="#home" data-href="home" aria-label="Home"
+                                class="header__menu-link header__menu-link--active">
+                                <span class="header__menu-icon lnr lnr-home"></span>
+                                <span class="header__menu-text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-me" aria-label="About Me" data-href="about-me" class="header__menu-link">
+                                <span class="header__menu-icon lnr lnr-user"></span>
+                                <span class="header__menu-text">About Me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resume" data-href="resume" aria-label="Resume" class="header__menu-link">
+                                <span class="header__menu-icon lnr lnr-graduation-hat"></span>
+                                <span class="header__menu-text">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" aria-label="Portfolio" data-href="portfolio" class="header__menu-link">
+                                <span class="header__menu-icon lnr lnr-briefcase"></span>
+                                <span class="header__menu-text">Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" aria-label="Contact" data-href="contact" class="header__menu-link">
+                                <span class="header__menu-icon lnr lnr-envelope"></span>
+                                <span class="header__menu-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header__toggle-theme-wrapper">
                     <label for="toggle-theme" class="label">
                         <input id="toggle-theme" type="checkbox" class="header__toggle-theme" />
@@ -90,12 +91,12 @@
                         <li>
                             <a href="https://github.com/goingtogogo"
                                 class="header__social-link header__social-link--github" target="_blank"
-                                aria-label="Github" rel="noreferrer noopener"></a>
+                                aria-label="Github" rel="noreferrer noopener">github</a>
                         </li>
                         <li>
                             <a href="https://codepen.io/goingtogogo" target="_blank"
                                 class="header__social-link header__social-link--codepen" aria-label="Codepen"
-                                rel="noreferrer noopener"></a>
+                                rel="noreferrer noopener">codepen</a>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +131,7 @@
                     <section data-id="home" class="animated-section home animated-section--active">
                         <div class="home__content">
                             <div class="home__title title-block">
-                                <h2>Hi, I'm Leyla</h2>
+                                <h2>Hi! I'm Leyla</h2>
                                 <div class="home__features">
                                     <ul class="home__features__inner">
                                         <li class="home__feature-content">
@@ -160,16 +161,16 @@
                             <div class="about__info">
                                 <div class="about__info-left">
                                     <p>
-                                        Hello there!  I'm a Frontend
+                                        I&rsquo;m a&nbsp;Frontend
                                         Developer from Syberia, currently
-                                        based in Moscow. I'm passionate
+                                        based in&nbsp;Moscow. I&rsquo;m passionate
                                         about coding, good interfaces and
-                                        improving user experience. As I grow
-                                        as a developer, I like to learn and
-                                        raise my standarts about what's
-                                        expected of well designed web apps.
-                                        I’m also friendly and easy-going
-                                        introvert, so feel free to DM me.
+                                        improving user experience. As&nbsp;I&nbsp;grow
+                                        as&nbsp;a&nbsp;developer, I&nbsp;like to&nbsp;learn and
+                                        raise my&nbsp;standarts about what&rsquo;s
+                                        expected of&nbsp;well designed web apps.
+                                        I&rsquo;m also friendly and easy-going
+                                        introvert, so&nbsp;feel free to&nbsp;DM&nbsp;me;)
                                     </p>
                                 </div>
 
@@ -424,7 +425,7 @@
                             <ul class="resume__certificates">
                                 <li class="resume__certificate-item">
                                     <div class="resume__certificate-logo">
-                                        <img src="img/clients/client-1.svg" alt="htmlacademy.ru" />
+                                        <img src="img/clients/client-1.png" alt="htmlacademy.ru" />
                                     </div>
 
                                     <div class="resume__certificate-content">
@@ -564,8 +565,7 @@
                                                     <label for="subject">Subject</label>
                                                     <div class="contact__input-border"></div>
                                                 </div>
-                                                <input type="submit" class="contact__submit-button"
-                                                    value="Send message" />
+
                                             </div>
                                             <div class="contact__fields-right">
                                                 <div class="contact__field">
@@ -577,6 +577,8 @@
                                                     <div class="contact__input-border"></div>
                                                 </div>
                                             </div>
+                                            <input type="submit" class="contact__submit-button btn-primary"
+                                                value="Send message" />
                                         </div>
                                     </form>
 

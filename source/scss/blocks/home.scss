@@ -13,14 +13,14 @@
     position: relative;
     list-style: none;
     margin:0;
+    padding: 0;
     animation: rotate 8s ease-in-out infinite;
 }
 
 .home__feature-content {
-    color: #aaa;
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 300;
-    margin: 5px 0;
+    text-shadow: 0px 2px 2px $c-secondary;
     text-align: center;
 }
 
@@ -31,15 +31,15 @@
     }
     25%,
     45% {
-        transform: translateY(-32px);
+        transform: translateY(-1.5em);
     }
     50%,
     70% {
-        transform: translateY(-64px);
+        transform: translateY(-3em);
     }
     75%,
     95% {
-        transform: translateY(-32px);
+        transform: translateY(-1.5em);
     }
     100% {
         transform: translateY(0);
