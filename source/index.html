@@ -27,6 +27,23 @@
 
     <div class="page">
         <div class="page-content">
+            <!-- Mobile Navigation -->
+            <div class="header__toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Arrows Nav -->
+            <div class="header__arrows-nav">
+                <button class="header__arrow-right" data-direction="right" aria-label="next">
+                    <i class="lnr lnr-chevron-right"></i>
+                </button>
+                <button class="header__arrow-left" data-direction="left" aria-label="prev">
+                    <i class="lnr lnr-chevron-left"></i>
+                </button>
+            </div>
+            <!-- End Arrows Nav -->
+            <!-- End Mobile Navigation -->
             <header id="header" class="header mobile-menu-hide">
                 <div class="header__content">
                     <div class="header__photo">
@@ -72,7 +89,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__toggle-theme-wrapper">
+                <!-- <div class="header__toggle-theme-wrapper">
                     <label for="toggle-theme" class="label">
                         <input id="toggle-theme" type="checkbox" class="header__toggle-theme" />
                         <div class="header__slider-wrapper">
@@ -84,7 +101,7 @@
                             <span class="header__star header__star-4"></span>
                         </div>
                     </label>
-                </div>
+                </div> -->
 
                 <div class="header__social-links">
                     <ul>
@@ -106,26 +123,7 @@
                 </div>
             </header>
 
-            <!-- Mobile Navigation -->
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!-- End Mobile Navigation -->
-
-            <!-- Arrows Nav -->
-            <div class="header__arrows-nav">
-                <button class="header__arrow-right" data-direction="right" aria-label="next">
-                    <i class="lnr lnr-chevron-right"></i>
-                </button>
-                <button class="header__arrow-left" data-direction="left" aria-label="prev">
-                    <i class="lnr lnr-chevron-left"></i>
-                </button>
-            </div>
-            <!-- End Arrows Nav -->
-
-            <div class="content-area">
+            <main class="content-area">
                 <div class="animated-sections">
                     <!-- Home Subpage -->
                     <section data-id="home" class="animated-section home animated-section--active">
@@ -590,7 +588,7 @@
                     </section>
                     <!-- End of Contact Subpage -->
                 </div>
-            </div>
+            </main>
         </div>
     </div>
 </body>

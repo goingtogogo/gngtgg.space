@@ -283,7 +283,7 @@ p {
     right: 0;
     bottom: 0;
     background-image: url('../../img/background.svg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
 }
@@ -375,7 +375,7 @@ p {
 }
 
 @media only screen and (min-width: 1025px) {
-    .menu-toggle {
+    .header__toggle-menu {
         display: none;
     }
 }

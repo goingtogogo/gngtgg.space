@@ -305,32 +305,31 @@
         line-height: 21px;
     }
 
-    .menu-toggle {
+    .header__toggle-menu {
         position: absolute;
-        display: block;
+        top: 10px;
+        right: 10px;
         width: 48px;
         height: 48px;
+        font-size: 20px;
         line-height: 46px;
         text-align: center;
-        background-color: $c-accent;
-        right: 10px;
-        font-size: 19px;
-        top: 10px;
         border-radius: 30px;
+        background-color: $c-accent;
         transform: rotate(0deg);
         transition: 0.5s ease-in-out;
         cursor: pointer;
         z-index: 900;
 
         span {
-            display: block;
             position: absolute;
+            left: 25%;
+            display: block;
             height: 3px;
             width: 50%;
             background: $c-white;
             border-radius: 5px;
             opacity: 1;
-            left: 25%;
             transform: rotate(0deg);
             transition: 0.25s ease-in-out;
 
@@ -373,21 +372,15 @@
     }
 
     .header__arrows-nav {
-        background-color: rgba(0, 0, 0, 0.6);
         width: 48px;
         right: 10px;
         bottom: 10px;
-        padding: 5px 0;
-        border: 2px solid $c-accent;
+        border: 4px solid $c-black;
 
         button {
-            font-size: 24px;
+            left: -7px;
+            padding: 12px 10px;
         }
     }
 
-    .header__arrow-right,
-    .header__arrow-left {
-        left: 0;
-        background: transparent;
-    }
 }
