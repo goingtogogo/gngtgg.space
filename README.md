@@ -1,5 +1,5 @@
 # gngtgg.space
-Personal website written in pure HTML, CSS and Javascript
+Source code for personal website. Written in pure HTML, CSS and Javascript
 
 ### Built with
 
