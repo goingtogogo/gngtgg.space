@@ -52,6 +52,7 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.8",
     "core-js": "^3.7.0",
     "normalize.css": "^8.0.1"
   }
