@@ -35,6 +35,11 @@
     color: darken($c-accent, 30%);
     font-weight: 600;
 }
+
+.about__info-mail {
+    font-size: 13px;
+}
+
 /* --- End Simple Info List --- */
 
 /* --- Info block with Icon --- */
@@ -51,10 +56,12 @@
 .about__info-block-w-icon {
     grid-column: span 6;
     padding: 0;
-        h4 {
-            margin: 8px 0;
-        }
+
+    h4 {
+        margin: 8px 0;
+    }
 }
+
 /* --- End Info block with Icon --- */
 
 @media only screen and (max-width: 1200px) {

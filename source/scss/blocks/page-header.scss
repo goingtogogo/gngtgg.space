@@ -23,7 +23,7 @@
         width: 70px;
         z-index: 999;
         list-style: none;
-        background-color: $c-accent; 
+        background-color: $c-accent;
         border: 4px solid $c-black;
     }
 
@@ -65,10 +65,11 @@
         margin-top: 50%;
         visibility: hidden;
         opacity: 0;
-        transition: all $base-duration ease-in-out;
+        transition: all 0.1s ease-in-out;
         z-index: 0;
-        box-shadow: -3px -3px 0px rgba(46, 22, 22, 0.9); 
+        box-shadow: -3px -3px 0px rgba(46, 22, 22, 0.9);
     }
+
     /* --- End Navigation --- */
 }
 
@@ -102,6 +103,7 @@
         background-color: $c-white;
     }
 }
+
 /* --- End Arrow Nav --- */
 
 .header__photo {
@@ -292,7 +294,7 @@
         line-height: 21px;
 
         &--active {
-             color: $c-white;
+            color: $c-white;
         }
     }
 

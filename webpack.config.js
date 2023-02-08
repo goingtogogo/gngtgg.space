@@ -66,7 +66,7 @@ module.exports = {
                     },
                     {
                         loader: 'sass-loader',
-                        options: {sourceMap: false},
+                        options: { sourceMap: false },
                     },
                     {
                         loader: 'postcss-loader',
@@ -119,6 +119,11 @@ module.exports = {
                 {
                     from: 'source/*.ico',
                     to: path.join(__dirname, 'build'),
+                    flatten: true,
+                },
+                {
+                    from: 'source/docs/**',
+                    to: path.join(__dirname, 'build', 'docs'),
                     flatten: true,
                 },
             ],
