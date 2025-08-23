@@ -19,7 +19,9 @@ module.exports = {
     },
     mode: 'production',
     devServer: {
-        contentBase: path.join(__dirname, 'build'),
+        static: {
+            directory: path.join(__dirname, 'build'),
+        },
         port: 7777,
     },
     output: {
@@ -53,7 +55,7 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                loader: 'svg-inline-loader'
+                loader: 'svg-inline-loader',
             },
             {
                 test: /\.s[a|c]ss$/,
@@ -70,7 +72,7 @@ module.exports = {
                     },
                     {
                         loader: 'sass-loader',
-                        options: { sourceMap: false },
+                        options: {sourceMap: false},
                     },
                     {
                         loader: 'postcss-loader',
