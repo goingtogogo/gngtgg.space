@@ -127,11 +127,6 @@ module.exports = {
                     to: path.join(__dirname, 'build'),
                     flatten: true,
                 },
-                {
-                    from: 'source/docs/**',
-                    to: path.join(__dirname, 'build', 'docs'),
-                    flatten: true,
-                },
             ],
         }),
     ],
